@@ -5,6 +5,7 @@ import "./globals.css";
 import { APP_DESCRIPTION, APP_NAME } from "@/constants";
 import { AppProviders } from "@/providers/app-providers";
 
+
 const geistSans = Geist({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -23,11 +24,13 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
 };
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html
       lang="en"
