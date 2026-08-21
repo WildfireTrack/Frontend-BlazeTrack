@@ -128,3 +128,7 @@
     @apply font-sans;
   }
 }
+
+.cesium-widget-credits {
+    display: none !important;
+}
